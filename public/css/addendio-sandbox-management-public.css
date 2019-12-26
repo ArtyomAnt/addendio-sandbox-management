@@ -1,0 +1,121 @@
+/*----------------------------------------------------------------------------
+ Utilities
+----------------------------------------------------------------------------*/
+/* States
+--------------------------------------*/
+.addenddio-background-info {
+    background-color: #03a9f4;
+}
+
+.addenddio-background-success {
+    background-color: #4caf50;
+}
+
+.addenddio-background-warning {
+    background-color: #ff5722;
+}
+
+.addenddio-background-danger {
+    background-color: #f44336;
+}
+
+/*----------------------------------------------------------------------------
+ Forms
+----------------------------------------------------------------------------*/
+/* Common styles
+--------------------------------------*/
+.addendio-box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.addendio-column-1-2 {
+    width: 50%;
+    padding: 0 1rem;
+}
+
+/* Login
+--------------------------------------*/
+
+/* Register
+--------------------------------------*/
+
+/* Lost Password
+--------------------------------------*/
+
+/*----------------------------------------------------------------------------
+ Modules
+----------------------------------------------------------------------------*/
+/* Spinner
+--------------------------------------*/
+.addendio-spinner {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.addendio-spinner > div {
+    background-color: #bbb;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    margin: 0 1px;
+}
+
+.addendio-spinner-overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.addendio-spinner .addendio-rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.addendio-spinner .addendio-rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.addendio-spinner .addendio-rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.addendio-spinner .addendio-rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% {
+        -webkit-transform: scaleY(0.4)
+    }
+    20% {
+        -webkit-transform: scaleY(1.0)
+    }
+}
+
+@keyframes sk-stretchdelay {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }
+    20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+}
